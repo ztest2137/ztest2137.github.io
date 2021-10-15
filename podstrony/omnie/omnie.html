@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/fontello.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+
+
+
+    <title>Tworzenie witryn</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+                <img src="../../images/logo.png" alt="logo" width="50px" height="50px" style="float: left;">
+                <span style="color: rgb(155, 25, 25);"> Tworzenie </span>witryn
+                </div style="clear: both;"></div>
+            </div>
+        </div>
+        <div class="nav">
+             <ol> <!--  uporządkowna numerowana listy punktów - czyli kolejność ma znaczenie -->
+                <li><a href="../../witryna.html">Strona główna</a></li> <!-- li - element listy --> 
+                <li><a href="#">HTML</a>
+                    <ul> <!--  nieuporządkowny i nienumerowany podzestaw punktów - czyli kolejność niema znaczenia -->
+                        <li><a href="../podstrona2/zadanie.html">Strona 1</a></li>
+                        <li><a href="../podstrona3/strona1.html">Strona 2</a></li>
+                        <li><a href="#">Strona 3</a></li>
+                        <li><a href="#">Strona 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CSS</a>
+                    <ul> <!-- podlista numerowana -->
+                        <li><a href="#">CSS1</a></li>
+                        <li><a href="#">CSS2</a></li>
+                        <li><a href="#">CSS3</a></li>
+                        <li><a href="#">CSS4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gotowce</a>
+                    <ul> <!-- podlista numerowana -->
+                        <li><a href="#">got1</a></li>
+                        <li><a href="#">got2</a></li>
+                        <li><a href="#">got3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Test</a>
+                    <ul> <!-- podlista numerowana -->
+                        <li><a href="#">test 1</a></li>
+                        <li><a href="#">test 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="omnie/">O autorach</a></li>
+            </ol>
+        <div style="clear:both"></div>
+        </div>
+        <div id="content">
+            <p>eloooooooooooooooooooooooooooooooooooooooooooooooooooooo</p>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            
+           
+        <div id="footer">
+            Tworzenie witryn.pl &copy; 2021
+        </div>
+
+    </div>
+     
+    <script src="jquery.min.js"></script>
+     
+    <script>
+ 
+    $(document).ready(function() {
+    var NavY = $('.nav').offset().top;
+      
+    var stickyNav = function(){
+    var ScrollY = $(window).scrollTop();
+           
+    if (ScrollY > NavY) { 
+        $('.nav').addClass('sticky');
+    } else {
+        $('.nav').removeClass('sticky'); 
+    }
+    };
+      
+    stickyNav();
+      
+    $(window).scroll(function() {
+        stickyNav();
+    });
+    });
+     
+</script>
+     
+</body>
+</html>

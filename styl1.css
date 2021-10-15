@@ -1,0 +1,166 @@
+body{
+    background-color: rgb(37, 36, 36); 
+    margin: 0 !important;
+    color: white;
+    font-size: 30px;
+}
+h1, h2{
+    font-family:sans-serif;
+    text-align: left;
+    color: dimgray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#wrapper{
+    width: 100%;
+}
+#header{
+    padding: 10px;
+    width: 100% 0;
+}
+#logo{
+    font-family: 'IM Fell English SC', serif;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    
+
+}
+.nav{
+    background-color: rgb(7, 73, 139);
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+#content{
+    padding: 20px 0;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+#socials{
+    width: 100%;
+    text-align: center;
+    background-color: #2e2727;
+}
+#socialdivs{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#fb{
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+#fb:hover{
+    background-color: #4668b3;
+    cursor: pointer;
+}
+#yt{
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+#yt:hover{
+    background-color: #c00;
+    cursor: pointer;
+}
+#tw{
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+#tw:hover{
+    background-color: #3095d3;
+    cursor: pointer;
+}
+#gplus{
+    width: 250px;
+    height: 155px;
+    float: left; /* ustawia elementy obok siebie */ 
+}
+#gplus:hover{
+    background-color: #d95333;
+    cursor: pointer;
+}
+#footer{
+    text-align: center;
+    background-color: #222222;
+    font-size: 20px;
+}
+.sticky{
+
+    width: 100%;
+    position: fixed; 
+    left: 0; 
+    top: 0;  
+    z-index: 100; /* aby element byl nad wszystkim */
+}
+ ol{
+    padding: 0;
+    margin:0;
+    list-style-type: none; /* usuwa elementy stylizowania listy np. 1 */
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%; /* jak wiele mkiejsca w pionie zajmuje jedna linia */
+    display: inline-block; /* tworzenie elementów blokowych które będą się układać obok siebie tak jakby miały (float:left;) przywraca wartość z .nav text-align: center; */
+
+ }
+ ol a{ /* stytlizowanie hiperłącz elementu ol */
+    color: white;
+    text-decoration: none; /* usunięcie dekorowania tekstu (usuwa podkreślenia itp */
+    display: black; /*ustawienie żeby ten element zachowywał się jak element blokowy */
+ }
+ ol > li{ /*stylizujemy element li, którego rodzicem jest element ol( stylizujemy tylko potomków ol) */
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px dashed rgb(19, 19, 80);
+ }
+ ol > li:first-child{ /* zastosowanie opcji do pierwszego elementu w kodzie od li */
+    border-left: 1px dashed rgb(19, 19, 80);
+}
+ol > li:hover{ /* co ma się stać po najechaniu li */
+    background-color: blueviolet;
+    cursor: pointer;
+}
+ol > li:hover > a{ /*stylizacja linku w li */
+    color: rgb(19, 19, 80);
+}
+ol > li > ul{ /* stylizacja potopka ul ktory jest potomkiem li ktory jest potomkiem ol */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none; /* wgl nie wyświetlaj listy ul */
+}
+ol > li:hover > ul{ /* czyli jak ma wyglądać lista wenętrzna ul (potomek ol > li) ale tylko kiedy zachodzi hover elementu ol > li */
+    display: block; /*pokazuj to jako elment blokowy */
+}
+ol > li > ul > li{
+    background-color: rgb(33, 92, 151) ;
+    position: relative; /* pozycja relatywna  czyli pof tamtą listą */
+    border-top: 1px dashed blue;
+}
+ol > li > ul > li:hover{
+    background-color: rgb(44, 44, 226);
+}
+ol > li > ul > li:hover > a{
+    color: rgb(10, 10, 10);
+}
